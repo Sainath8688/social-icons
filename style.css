@@ -1,0 +1,53 @@
+
+body {
+    display: flex;  /*Set the body element to have a flexbox layout */
+    justify-content: center; /* Center elements horizontally within the body*/
+    align-items: center; /* Center elements vertically within the body */
+    height: 100vh; /*  Set the body height to 100% of the viewport height */
+    background: #2d3a4b; /* Set the background color of the body */
+}
+
+.pie-chart {
+    position: relative; /* Position the element relative to its parent */
+    width: 300px; /*Set the width of the pie chart */
+    height: 300px;/*Set the height of the pie chart */
+    border-radius: 50%;  /* Create a circular shape for the pie chart */
+    overflow: hidden;   /* Hide content overflowing the border-radius */
+}
+.pie-chart button {
+    position: absolute;  /* Position the button absolutely within the pie chart */
+    width: 50%;  /* Set the width of the button */
+    height: 50%; /* Set the height of the button */
+    font-size: 2em;  /* Set the button font size */
+    color: white;
+    
+}
+.pie-chart .top-left {
+    background: #e1306c;  /*Set the background color of the top left section */
+    top:0;       /* Position the top left section at the top right corner  */
+    left: 0;   
+    border-left: none; /*  Remove borders on the top and left sides */
+    border-top: none;
+}
+.pie-chart .top-right {
+    background: #1da1f2; /*Set the background color of the top right section */
+    top:0;          /* Position the top right section at the top right corner  */
+    right: 0;   
+    border-top: none;   /*  Remove borders on the top and right sides */
+    border-right: none;
+}
+
+.pie-chart .bottom-left {
+    background: #333;
+    bottom: 0;    /* Position the bottom left section at the top right corner  */
+    left: 0;
+    border-bottom: none;   /*  Remove borders on the bottom and left sides */
+    border-left: none;
+}
+.pie-chart .bottom-right {
+    background-color:#7289da ;  /* Position the bottom right section at the top right corner  */
+    bottom: 0;   /* Position the bottom right section at the top right corner  */
+    right: 0;
+    border-right: none;   /*  Remove borders on the right and left sides */
+    border-bottom: none;
+}
